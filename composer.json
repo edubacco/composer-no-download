@@ -1,0 +1,26 @@
+{
+    "name": "edubacco/composer-no-download",
+    "description": "A composer plugin that prevents composer from downloading packages",
+    "type": "composer-plugin",
+    "version": "1.0",
+    "authors": [
+        {
+            "name": "Eduardo Silvi",
+            "email": "eduardo3q@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "ComposerNoDownload\\": "src/"
+        }
+    },
+    "extra": {
+        "class": "ComposerNoDownload\\Plugin"
+    },
+    "require": {
+        "composer-plugin-api": "^1.1"
+    },
+    "require-dev": {
+        "composer/composer": "^1.8"
+    }
+}
